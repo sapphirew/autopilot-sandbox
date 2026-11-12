@@ -18,17 +18,26 @@
       "ServiceLinkedRole.SourceRoleTemplate"
     ]
   },
-  "state": "DETECTED",
+  "state": "WONT_FIX",
   "links": {
     "view_issue": "https://github.com/sapphirew/autopilot-sandbox/issues/2"
   },
-  "verdict": null,
+  "verdict": {
+    "outcome": "wont_fix:product_decision",
+    "reason": "ISSUE_CLOSED"
+  },
   "history": [
     {
       "ts": "2026-11-12T01:58:39Z",
       "to": "DETECTED",
       "by": "issue-finder",
       "reason": "issue #2"
+    },
+    {
+      "ts": "2026-11-12T01:59:25Z",
+      "to": "WONT_FIX",
+      "by": "issue-finder",
+      "reason": "ISSUE_CLOSED"
     }
   ]
 }

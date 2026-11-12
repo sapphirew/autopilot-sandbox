@@ -20,17 +20,26 @@
   "depends_on": [
     "sdk-bump|s3|*|service/s3/v1.114.10"
   ],
-  "state": "DETECTED",
+  "state": "WONT_FIX",
   "links": {
     "view_issue": "https://github.com/sapphirew/autopilot-sandbox/issues/1"
   },
-  "verdict": null,
+  "verdict": {
+    "outcome": "wont_fix:product_decision",
+    "reason": "MAINTAINER_WONTFIX by sapphirew"
+  },
   "history": [
     {
       "ts": "2026-11-12T01:58:39Z",
       "to": "DETECTED",
       "by": "issue-finder",
       "reason": "issue #1"
+    },
+    {
+      "ts": "2026-11-12T01:59:25Z",
+      "to": "WONT_FIX",
+      "by": "issue-finder",
+      "reason": "MAINTAINER_WONTFIX by sapphirew"
     }
   ]
 }
