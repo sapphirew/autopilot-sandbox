@@ -1,0 +1,32 @@
+{
+  "schema": "ack.autopilot.workitem/v1",
+  "key": "api-change|ec2|TransitGatewayAttachmentNatConfiguration|possible:TransitGatewayAttachmentNatConfiguration|manual-review",
+  "key_hash": "sha256:dd74f7485dbc348f",
+  "generation": 1,
+  "source": "api-change",
+  "service": "ec2",
+  "repo": "aws-controllers-k8s/ec2-controller",
+  "resource": "TransitGatewayAttachmentNatConfiguration",
+  "gap_class": "manual-review",
+  "change_class": "unclassified",
+  "autonomy_level": "observe",
+  "priority_band": 6,
+  "detector_work": "possible-resource",
+  "evidence": {
+    "sdk_from": "v1.41.1",
+    "sdk_to": "service/ec2/v1.345.0"
+  },
+  "state": "DETECTED",
+  "links": {
+    "view_issue": "https://github.com/sapphirew/autopilot-sandbox/issues/4"
+  },
+  "verdict": null,
+  "history": [
+    {
+      "ts": "2026-11-12T01:58:39Z",
+      "to": "DETECTED",
+      "by": "issue-finder",
+      "reason": "issue #4"
+    }
+  ]
+}

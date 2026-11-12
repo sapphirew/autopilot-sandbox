@@ -1,0 +1,36 @@
+{
+  "schema": "ack.autopilot.workitem/v1",
+  "key": "api-change|eks|Capability|spec:configuration.argoCd.endpointPrefix|needs-config",
+  "key_hash": "sha256:e134b6596fcbda57",
+  "generation": 1,
+  "source": "api-change",
+  "service": "eks",
+  "repo": "aws-controllers-k8s/eks-controller",
+  "resource": "Capability",
+  "field_path": "configuration.argoCd.endpointPrefix",
+  "gap_class": "needs-config",
+  "change_class": "config-only",
+  "autonomy_level": "human-merge",
+  "priority_band": 4,
+  "detector_work": "create-only",
+  "evidence": {
+    "sdk_from": "service/eks/v1.95.1",
+    "sdk_to": "service/eks/v1.105.6"
+  },
+  "depends_on": [
+    "sdk-bump|eks|*|service/eks/v1.105.6"
+  ],
+  "state": "DETECTED",
+  "links": {
+    "view_issue": "https://github.com/sapphirew/autopilot-sandbox/issues/5"
+  },
+  "verdict": null,
+  "history": [
+    {
+      "ts": "2026-11-12T01:58:39Z",
+      "to": "DETECTED",
+      "by": "issue-finder",
+      "reason": "issue #5"
+    }
+  ]
+}

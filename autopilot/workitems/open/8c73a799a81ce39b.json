@@ -1,0 +1,30 @@
+{
+  "schema": "ack.autopilot.workitem/v1",
+  "key": "sdk-bump|s3|*|service/s3/v1.114.10",
+  "key_hash": "sha256:8c73a799a81ce39b",
+  "generation": 1,
+  "source": "api-change",
+  "service": "s3",
+  "repo": "aws-controllers-k8s/s3-controller",
+  "gap_class": "regen",
+  "change_class": "SDK-bump",
+  "autonomy_level": "human-merge",
+  "priority_band": 3,
+  "evidence": {
+    "sdk_from": "v1.41.5",
+    "sdk_to": "service/s3/v1.114.10"
+  },
+  "state": "DETECTED",
+  "links": {
+    "view_issue": "https://github.com/sapphirew/autopilot-sandbox/issues/1"
+  },
+  "verdict": null,
+  "history": [
+    {
+      "ts": "2026-11-12T01:58:39Z",
+      "to": "DETECTED",
+      "by": "issue-finder",
+      "reason": "issue #1"
+    }
+  ]
+}

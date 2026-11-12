@@ -1,0 +1,31 @@
+{
+  "schema": "ack.autopilot.workitem/v1",
+  "key": "api-change|ec2|IpamInternetRegistryAssociation|new-resource",
+  "key_hash": "sha256:f7e8c4c8e2bb7d12",
+  "generation": 1,
+  "source": "api-change",
+  "service": "ec2",
+  "repo": "aws-controllers-k8s/ec2-controller",
+  "resource": "IpamInternetRegistryAssociation",
+  "gap_class": "new-resource",
+  "change_class": "new-resource",
+  "autonomy_level": "draft",
+  "priority_band": 6,
+  "evidence": {
+    "sdk_from": "v1.41.1",
+    "sdk_to": "service/ec2/v1.345.0"
+  },
+  "state": "DETECTED",
+  "links": {
+    "view_issue": "https://github.com/sapphirew/autopilot-sandbox/issues/4"
+  },
+  "verdict": null,
+  "history": [
+    {
+      "ts": "2026-11-12T01:58:39Z",
+      "to": "DETECTED",
+      "by": "issue-finder",
+      "reason": "issue #4"
+    }
+  ]
+}

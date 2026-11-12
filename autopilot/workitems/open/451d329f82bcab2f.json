@@ -1,0 +1,44 @@
+{
+  "schema": "ack.autopilot.workitem/v1",
+  "key": "sdk-bump|ec2|*|service/ec2/v1.345.0",
+  "key_hash": "sha256:451d329f82bcab2f",
+  "generation": 1,
+  "source": "api-change",
+  "service": "ec2",
+  "repo": "aws-controllers-k8s/ec2-controller",
+  "gap_class": "regen",
+  "change_class": "SDK-bump",
+  "autonomy_level": "human-merge",
+  "priority_band": 3,
+  "evidence": {
+    "sdk_from": "v1.41.1",
+    "sdk_to": "service/ec2/v1.345.0",
+    "findings": [
+      "CapacityReservation.AdjustmentDetails",
+      "CapacityReservation.AdjustmentStatus",
+      "CapacityReservation.CapacityAllocations.AllocationMetadata",
+      "CapacityReservation.CommitmentInfo.CommitmentDuration",
+      "CapacityReservation.LaunchStatus",
+      "CapacityReservation.OriginalStartDate",
+      "CapacityReservation.ZeroSizePreference",
+      "LaunchTemplate.Data.BlockDeviceMappings.Ebs.EbsCardIndex",
+      "LaunchTemplate.Data.CpuOptions.NestedVirtualization",
+      "LaunchTemplate.Data.SecondaryInterfaces",
+      "LaunchTemplate.Operator.HiddenByDefault",
+      "VPCEndpoint.PayerResponsibilities"
+    ]
+  },
+  "state": "DETECTED",
+  "links": {
+    "view_issue": "https://github.com/sapphirew/autopilot-sandbox/issues/4"
+  },
+  "verdict": null,
+  "history": [
+    {
+      "ts": "2026-11-12T01:58:39Z",
+      "to": "DETECTED",
+      "by": "issue-finder",
+      "reason": "issue #4"
+    }
+  ]
+}

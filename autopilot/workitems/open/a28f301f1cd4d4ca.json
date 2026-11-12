@@ -1,0 +1,32 @@
+{
+  "schema": "ack.autopilot.workitem/v1",
+  "key": "api-change|iam|DelegationRequest|transient:DelegationRequest|manual-review",
+  "key_hash": "sha256:a28f301f1cd4d4ca",
+  "generation": 1,
+  "source": "api-change",
+  "service": "iam",
+  "repo": "aws-controllers-k8s/iam-controller",
+  "resource": "DelegationRequest",
+  "gap_class": "manual-review",
+  "change_class": "unclassified",
+  "autonomy_level": "observe",
+  "priority_band": 6,
+  "detector_work": "transient-resource",
+  "evidence": {
+    "sdk_from": "v1.32.6",
+    "sdk_to": "service/iam/v1.65.0"
+  },
+  "state": "DETECTED",
+  "links": {
+    "view_issue": "https://github.com/sapphirew/autopilot-sandbox/issues/2"
+  },
+  "verdict": null,
+  "history": [
+    {
+      "ts": "2026-11-12T01:58:39Z",
+      "to": "DETECTED",
+      "by": "issue-finder",
+      "reason": "issue #2"
+    }
+  ]
+}

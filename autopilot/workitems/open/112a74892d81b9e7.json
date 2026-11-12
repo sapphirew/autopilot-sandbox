@@ -1,0 +1,33 @@
+{
+  "schema": "ack.autopilot.workitem/v1",
+  "key": "sdk-bump|eks|*|service/eks/v1.105.6",
+  "key_hash": "sha256:112a74892d81b9e7",
+  "generation": 1,
+  "source": "api-change",
+  "service": "eks",
+  "repo": "aws-controllers-k8s/eks-controller",
+  "gap_class": "regen",
+  "change_class": "SDK-bump",
+  "autonomy_level": "human-merge",
+  "priority_band": 3,
+  "evidence": {
+    "sdk_from": "service/eks/v1.95.1",
+    "sdk_to": "service/eks/v1.105.6",
+    "findings": [
+      "Capability.configuration.ack"
+    ]
+  },
+  "state": "DETECTED",
+  "links": {
+    "view_issue": "https://github.com/sapphirew/autopilot-sandbox/issues/5"
+  },
+  "verdict": null,
+  "history": [
+    {
+      "ts": "2026-11-12T01:58:39Z",
+      "to": "DETECTED",
+      "by": "issue-finder",
+      "reason": "issue #5"
+    }
+  ]
+}

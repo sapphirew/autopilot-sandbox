@@ -1,0 +1,57 @@
+{
+  "schema": "ack.autopilot.workitem/v1",
+  "key": "sdk-bump|rds|*|service/rds/v1.133.0",
+  "key_hash": "sha256:0ad0b41d402da16f",
+  "generation": 1,
+  "source": "api-change",
+  "service": "rds",
+  "repo": "aws-controllers-k8s/rds-controller",
+  "gap_class": "regen",
+  "change_class": "SDK-bump",
+  "autonomy_level": "human-merge",
+  "priority_band": 3,
+  "evidence": {
+    "sdk_from": "v1.34.0",
+    "sdk_to": "service/rds/v1.133.0",
+    "findings": [
+      "DBCluster.InternetAccessGatewayEnabled",
+      "DBCluster.MasterUserAuthenticationType",
+      "DBCluster.ServerlessV2PlatformVersion",
+      "DBCluster.StorageEncryptionType",
+      "DBCluster.UpgradeRolloutOrder",
+      "DBCluster.VPCNetworkingEnabled",
+      "DBClusterSnapshot.BackupRetentionPeriod",
+      "DBClusterSnapshot.PreferredBackupWindow",
+      "DBClusterSnapshot.StorageEncryptionType",
+      "DBInstance.MasterUserAuthenticationType",
+      "DBInstance.PendingModifiedValues.AdditionalStorageVolumes",
+      "DBInstance.PendingModifiedValues.DBCapacityReservationIdentifier",
+      "DBInstance.StorageEncryptionType",
+      "DBInstance.StorageOperationPercentProgress",
+      "DBInstance.StorageOperationStatus",
+      "DBInstance.StorageVolumeStatus",
+      "DBInstance.UpgradeRolloutOrder",
+      "DBProxy.DefaultAuthScheme",
+      "DBSnapshot.AdditionalStorageVolumes",
+      "DBSnapshot.BackupRetentionPeriod",
+      "DBSnapshot.FullSnapshotSizeInBytes",
+      "DBSnapshot.PreferredBackupWindow",
+      "DBSnapshot.SnapshotAvailabilityZone",
+      "DBSnapshot.StorageEncryptionType",
+      "GlobalCluster.StorageEncryptionType"
+    ]
+  },
+  "state": "DETECTED",
+  "links": {
+    "view_issue": "https://github.com/sapphirew/autopilot-sandbox/issues/3"
+  },
+  "verdict": null,
+  "history": [
+    {
+      "ts": "2026-11-12T01:58:39Z",
+      "to": "DETECTED",
+      "by": "issue-finder",
+      "reason": "issue #3"
+    }
+  ]
+}

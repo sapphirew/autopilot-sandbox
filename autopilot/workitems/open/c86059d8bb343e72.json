@@ -1,0 +1,36 @@
+{
+  "schema": "ack.autopilot.workitem/v1",
+  "key": "api-change|s3|Bucket|spec:ObjectLockConfiguration.Rule.DefaultRetention.DefaultEventHold|needs-config",
+  "key_hash": "sha256:c86059d8bb343e72",
+  "generation": 1,
+  "source": "api-change",
+  "service": "s3",
+  "repo": "aws-controllers-k8s/s3-controller",
+  "resource": "Bucket",
+  "field_path": "ObjectLockConfiguration.Rule.DefaultRetention.DefaultEventHold",
+  "gap_class": "needs-config",
+  "change_class": "hand-written-code",
+  "autonomy_level": "human-merge",
+  "priority_band": 4,
+  "detector_work": "from-sibling",
+  "evidence": {
+    "sdk_from": "v1.41.5",
+    "sdk_to": "service/s3/v1.114.10"
+  },
+  "depends_on": [
+    "sdk-bump|s3|*|service/s3/v1.114.10"
+  ],
+  "state": "DETECTED",
+  "links": {
+    "view_issue": "https://github.com/sapphirew/autopilot-sandbox/issues/1"
+  },
+  "verdict": null,
+  "history": [
+    {
+      "ts": "2026-11-12T01:58:39Z",
+      "to": "DETECTED",
+      "by": "issue-finder",
+      "reason": "issue #1"
+    }
+  ]
+}

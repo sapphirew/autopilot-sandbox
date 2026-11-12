@@ -1,0 +1,36 @@
+{
+  "schema": "ack.autopilot.workitem/v1",
+  "key": "api-change|rds|DBProxy|spec:TargetConnectionNetworkType|needs-config",
+  "key_hash": "sha256:2307e8328ff7c719",
+  "generation": 1,
+  "source": "api-change",
+  "service": "rds",
+  "repo": "aws-controllers-k8s/rds-controller",
+  "resource": "DBProxy",
+  "field_path": "TargetConnectionNetworkType",
+  "gap_class": "needs-config",
+  "change_class": "config-only",
+  "autonomy_level": "human-merge",
+  "priority_band": 4,
+  "detector_work": "create-only",
+  "evidence": {
+    "sdk_from": "v1.34.0",
+    "sdk_to": "service/rds/v1.133.0"
+  },
+  "depends_on": [
+    "sdk-bump|rds|*|service/rds/v1.133.0"
+  ],
+  "state": "DETECTED",
+  "links": {
+    "view_issue": "https://github.com/sapphirew/autopilot-sandbox/issues/3"
+  },
+  "verdict": null,
+  "history": [
+    {
+      "ts": "2026-11-12T01:58:39Z",
+      "to": "DETECTED",
+      "by": "issue-finder",
+      "reason": "issue #3"
+    }
+  ]
+}

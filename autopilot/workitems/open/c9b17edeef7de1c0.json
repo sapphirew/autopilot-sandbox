@@ -1,0 +1,32 @@
+{
+  "schema": "ack.autopilot.workitem/v1",
+  "key": "api-change|rds|DBCapacityReservation|transient:DBCapacityReservation|manual-review",
+  "key_hash": "sha256:c9b17edeef7de1c0",
+  "generation": 1,
+  "source": "api-change",
+  "service": "rds",
+  "repo": "aws-controllers-k8s/rds-controller",
+  "resource": "DBCapacityReservation",
+  "gap_class": "manual-review",
+  "change_class": "unclassified",
+  "autonomy_level": "observe",
+  "priority_band": 6,
+  "detector_work": "transient-resource",
+  "evidence": {
+    "sdk_from": "v1.34.0",
+    "sdk_to": "service/rds/v1.133.0"
+  },
+  "state": "DETECTED",
+  "links": {
+    "view_issue": "https://github.com/sapphirew/autopilot-sandbox/issues/3"
+  },
+  "verdict": null,
+  "history": [
+    {
+      "ts": "2026-11-12T01:58:39Z",
+      "to": "DETECTED",
+      "by": "issue-finder",
+      "reason": "issue #3"
+    }
+  ]
+}

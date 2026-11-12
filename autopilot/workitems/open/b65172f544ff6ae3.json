@@ -1,0 +1,36 @@
+{
+  "schema": "ack.autopilot.workitem/v1",
+  "key": "api-change|ec2|Instance|spec:CpuOptions.NestedVirtualization|needs-config",
+  "key_hash": "sha256:b65172f544ff6ae3",
+  "generation": 1,
+  "source": "api-change",
+  "service": "ec2",
+  "repo": "aws-controllers-k8s/ec2-controller",
+  "resource": "Instance",
+  "field_path": "CpuOptions.NestedVirtualization",
+  "gap_class": "needs-config",
+  "change_class": "config-only",
+  "autonomy_level": "human-merge",
+  "priority_band": 4,
+  "detector_work": "create-only",
+  "evidence": {
+    "sdk_from": "v1.41.1",
+    "sdk_to": "service/ec2/v1.345.0"
+  },
+  "depends_on": [
+    "sdk-bump|ec2|*|service/ec2/v1.345.0"
+  ],
+  "state": "DETECTED",
+  "links": {
+    "view_issue": "https://github.com/sapphirew/autopilot-sandbox/issues/4"
+  },
+  "verdict": null,
+  "history": [
+    {
+      "ts": "2026-11-12T01:58:39Z",
+      "to": "DETECTED",
+      "by": "issue-finder",
+      "reason": "issue #4"
+    }
+  ]
+}
