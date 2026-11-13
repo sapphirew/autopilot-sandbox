@@ -41,7 +41,7 @@
       "GlobalCluster.StorageEncryptionType"
     ]
   },
-  "state": "DETECTED",
+  "state": "QUEUED",
   "links": {
     "view_issue": "https://github.com/sapphirew/autopilot-sandbox/issues/3"
   },
@@ -52,6 +52,18 @@
       "to": "DETECTED",
       "by": "issue-finder",
       "reason": "issue #3"
+    },
+    {
+      "ts": "2026-11-13T00:06:43Z",
+      "to": "TRIAGED",
+      "by": "dispatcher",
+      "reason": "NO_TRIAGE_NEEDED"
+    },
+    {
+      "ts": "2026-11-13T00:06:43Z",
+      "to": "QUEUED",
+      "by": "dispatcher",
+      "reason": "READY"
     }
   ]
 }

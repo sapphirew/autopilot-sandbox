@@ -14,7 +14,7 @@
     "sdk_from": "v1.41.5",
     "sdk_to": "service/s3/v1.114.10"
   },
-  "state": "DETECTED",
+  "state": "QUEUED",
   "links": {
     "view_issue": "https://github.com/sapphirew/autopilot-sandbox/issues/1"
   },
@@ -25,6 +25,18 @@
       "to": "DETECTED",
       "by": "issue-finder",
       "reason": "issue #1"
+    },
+    {
+      "ts": "2026-11-13T00:06:43Z",
+      "to": "TRIAGED",
+      "by": "dispatcher",
+      "reason": "NO_TRIAGE_NEEDED"
+    },
+    {
+      "ts": "2026-11-13T00:06:43Z",
+      "to": "QUEUED",
+      "by": "dispatcher",
+      "reason": "READY"
     }
   ]
 }
