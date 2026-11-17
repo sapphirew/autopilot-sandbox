@@ -33,17 +33,17 @@
     "input": "sha256:8b8aba558e64369b",
     "runs": 1,
     "launches": 1,
-    "claim": {
-      "launch_id": "autopilot-c86059d8bb343e72-g1-t1",
-      "workflow": "triage",
-      "ts": "2026-11-17T22:39:51Z",
-      "deadline": "2026-11-17T23:09:51Z"
-    },
     "log": [
       {
         "ts": "2026-11-17T22:39:51Z",
         "event": "started",
         "launch_id": "autopilot-c86059d8bb343e72-g1-t1"
+      },
+      {
+        "ts": "2026-11-17T22:41:38Z",
+        "event": "failed",
+        "launch_id": "autopilot-c86059d8bb343e72-g1-t1",
+        "reason": "CONTROLLER_CLONE_FAILED"
       }
     ]
   },
@@ -59,6 +59,12 @@
       "to": "DETECTED",
       "by": "dispatcher",
       "reason": "TRIAGE_STARTED autopilot-c86059d8bb343e72-g1-t1"
+    },
+    {
+      "ts": "2026-11-17T22:41:38Z",
+      "to": "DETECTED",
+      "by": "dispatcher",
+      "reason": "TRIAGE_FAILED CONTROLLER_CLONE_FAILED"
     }
   ]
 }
