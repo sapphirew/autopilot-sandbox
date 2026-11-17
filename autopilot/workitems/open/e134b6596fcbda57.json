@@ -24,7 +24,7 @@
     "tokens": 2041,
     "e2e_runs": 0
   },
-  "state": "TRIAGED",
+  "state": "BLOCKED",
   "links": {
     "view_issue": "https://github.com/sapphirew/autopilot-sandbox/issues/5",
     "prowjobs": [
@@ -50,6 +50,14 @@
       ],
       "ts": "2026-11-17T22:42:42Z"
     },
+    "review": {
+      "launch_id": "autopilot-e134b6596fcbda57-g1-t1",
+      "outcome": "accepted",
+      "decision": "field-config",
+      "by": "sapphirew",
+      "comment_id": 6963148122,
+      "ts": "2026-11-17T22:42:59Z"
+    },
     "log": [
       {
         "ts": "2026-11-17T22:42:10Z",
@@ -61,6 +69,13 @@
         "event": "proposed",
         "launch_id": "autopilot-e134b6596fcbda57-g1-t1",
         "decision": "field-config"
+      },
+      {
+        "ts": "2026-11-17T22:42:59Z",
+        "event": "accepted",
+        "launch_id": "autopilot-e134b6596fcbda57-g1-t1",
+        "decision": "field-config",
+        "by": "sapphirew"
       }
     ]
   },
@@ -82,6 +97,18 @@
       "to": "TRIAGED",
       "by": "dispatcher",
       "reason": "TRIAGE_PROPOSED field-config"
+    },
+    {
+      "ts": "2026-11-17T22:42:59Z",
+      "to": "TRIAGED",
+      "by": "dispatcher",
+      "reason": "TRIAGE_ACCEPTED field-config by sapphirew"
+    },
+    {
+      "ts": "2026-11-17T22:42:59Z",
+      "to": "BLOCKED",
+      "by": "dispatcher",
+      "reason": "DEPENDS_ON sha256:112a74892d81b9e7 QUEUED"
     }
   ]
 }
