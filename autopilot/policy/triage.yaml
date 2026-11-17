@@ -5,7 +5,7 @@ modes: [api]
 # Triage runs are tool-less model calls of a few minutes. They have their own
 # caps and do not count against max_concurrent_llm_runs.
 max_concurrent_triage_runs: 1
-max_triage_launches_per_day: 1
+max_triage_launches_per_day: 2
 # Runs per item and detector classification; then the item waits for a person.
 max_triage_runs_per_item: 2
 job_timeout_minutes: 30

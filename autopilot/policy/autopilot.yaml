@@ -7,5 +7,5 @@ paused_repos: []
 # this version accepts.
 launcher: prow
 # Services whose items may be launched (Phase 1: the monitored five).
-services: [s3]
+services: [eks]
 abort_inflight: false
