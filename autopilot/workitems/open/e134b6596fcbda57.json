@@ -22,15 +22,43 @@
   ],
   "state": "DETECTED",
   "links": {
-    "view_issue": "https://github.com/sapphirew/autopilot-sandbox/issues/5"
+    "view_issue": "https://github.com/sapphirew/autopilot-sandbox/issues/5",
+    "prowjobs": [
+      "autopilot-e134b6596fcbda57-g1-t1"
+    ]
   },
   "verdict": null,
+  "triage": {
+    "mode": "api",
+    "input": "sha256:04b0b446d9ed4bf8",
+    "runs": 1,
+    "launches": 1,
+    "claim": {
+      "launch_id": "autopilot-e134b6596fcbda57-g1-t1",
+      "workflow": "triage",
+      "ts": "2026-11-17T22:42:10Z",
+      "deadline": "2026-11-17T23:12:10Z"
+    },
+    "log": [
+      {
+        "ts": "2026-11-17T22:42:10Z",
+        "event": "started",
+        "launch_id": "autopilot-e134b6596fcbda57-g1-t1"
+      }
+    ]
+  },
   "history": [
     {
       "ts": "2026-11-12T01:58:39Z",
       "to": "DETECTED",
       "by": "issue-finder",
       "reason": "issue #5"
+    },
+    {
+      "ts": "2026-11-17T22:42:10Z",
+      "to": "DETECTED",
+      "by": "dispatcher",
+      "reason": "TRIAGE_STARTED autopilot-e134b6596fcbda57-g1-t1"
     }
   ]
 }
