@@ -5,6 +5,7 @@ paused: false
 paused_repos: []
 # shadow: log what would be launched and start nothing. The only launcher
 # this version accepts.
-launcher: shadow
+launcher: prow
 # Services whose items may be launched (Phase 1: the monitored five).
-services: [s3, iam, rds, ec2, eks]
+services: [s3]
+abort_inflight: false
