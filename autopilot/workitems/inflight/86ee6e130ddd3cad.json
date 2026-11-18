@@ -1,0 +1,62 @@
+{
+  "schema": "ack.autopilot.workitem/v1",
+  "key": "sdk-bump|sandbox|*|service/sandbox/v0.0.1",
+  "key_hash": "sha256:86ee6e130ddd3cad",
+  "generation": 1,
+  "source": "api-change",
+  "service": "sandbox",
+  "repo": "sapphirew/autopilot-sandbox",
+  "gap_class": "regen",
+  "change_class": "SDK-bump",
+  "autonomy_level": "human-merge",
+  "priority_band": 3,
+  "evidence": {
+    "sdk_to": "service/sandbox/v0.0.1"
+  },
+  "state": "HUMAN_REVIEW",
+  "links": {
+    "pr": "https://github.com/sapphirew/autopilot-sandbox/pull/6",
+    "prowjobs": [
+      "autopilot-86ee6e130ddd3cad-g1-r1"
+    ]
+  },
+  "verdict": null,
+  "history": [
+    {
+      "ts": "2026-11-18T08:00:00Z",
+      "to": "QUEUED",
+      "by": "e2e-seed"
+    },
+    {
+      "ts": "2026-11-18T09:00:00Z",
+      "to": "HUMAN_REVIEW",
+      "by": "e2e-seed",
+      "reason": "PLAN9_E2E_SEED"
+    }
+  ],
+  "attempts": {
+    "runs": 1,
+    "max_runs": 3
+  },
+  "gate": {
+    "source": "sdk-bump",
+    "launch_id": "autopilot-86ee6e130ddd3cad-g1-r1",
+    "head_sha": "34ac77d6c77504385b18a3dd0c8d450aac805a94",
+    "verdict": "pass",
+    "digest": "sha256:e2e",
+    "env_retries": 0,
+    "gates": 1,
+    "ts": "2026-11-18T09:00:00Z"
+  },
+  "review": {
+    "number": 6,
+    "author": "sapphirew",
+    "review_rounds": 0,
+    "human_commits": 0,
+    "feedback_rounds": 0,
+    "would_merge": "yes",
+    "pinned_human_merge": false,
+    "last_activity": "2026-11-18T09:00:00Z",
+    "stale_requeues": 0
+  }
+}

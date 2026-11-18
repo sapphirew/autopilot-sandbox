@@ -1,0 +1,56 @@
+{
+  "schema": "ack.autopilot.workitem/v1",
+  "key": "api-change|eks|Cluster|spec:Plan9E2E|needs-config",
+  "key_hash": "sha256:c8991b87dc090165",
+  "generation": 1,
+  "source": "api-change",
+  "service": "eks",
+  "repo": "ack-prow-staging/eks-controller",
+  "gap_class": "needs-config",
+  "change_class": "config-only",
+  "autonomy_level": "human-merge",
+  "priority_band": 4,
+  "evidence": {},
+  "state": "GATING",
+  "links": {
+    "pr": "https://github.com/ack-prow-staging/eks-controller/pull/1",
+    "prowjobs": [
+      "autopilot-c8991b87dc090165-g1-d1"
+    ]
+  },
+  "verdict": null,
+  "history": [
+    {
+      "ts": "2026-11-18T08:00:00Z",
+      "to": "DETECTED",
+      "by": "e2e-seed"
+    },
+    {
+      "ts": "2026-11-18T09:00:00Z",
+      "to": "GATING",
+      "by": "e2e-seed",
+      "reason": "PLAN9_E2E_SEED autopilot-c8991b87dc090165-g1-d1"
+    }
+  ],
+  "resource": "Cluster",
+  "field_path": "Plan9E2E",
+  "attempts": {
+    "runs": 1,
+    "max_runs": 3
+  },
+  "claim": {
+    "launch_id": "autopilot-c8991b87dc090165-g1-d1",
+    "workflow": "dod",
+    "ts": "2026-11-18T09:00:00Z",
+    "deadline": "2026-11-18T11:00:00Z"
+  },
+  "gate": {
+    "source": "dod",
+    "launch_id": "autopilot-c8991b87dc090165-g1-d1",
+    "head_sha": "7da9e9b042e8b3f163d751f3f7bfd9fe2f5aebff",
+    "base_sha": "58b3d8d5f1995710bea00659155009d3b2cb6f9e",
+    "env_retries": 0,
+    "gates": 1,
+    "ts": "2026-11-18T09:00:00Z"
+  }
+}
