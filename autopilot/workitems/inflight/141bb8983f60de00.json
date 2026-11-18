@@ -15,9 +15,22 @@
     "sdk_from": "v1.41.1",
     "sdk_to": "service/ec2/v1.345.0"
   },
-  "state": "QUEUED",
+  "attempts": {
+    "runs": 1,
+    "max_runs": 3
+  },
+  "state": "RUNNING",
   "links": {
-    "view_issue": "https://github.com/sapphirew/autopilot-sandbox/issues/4"
+    "view_issue": "https://github.com/sapphirew/autopilot-sandbox/issues/4",
+    "prowjobs": [
+      "autopilot-141bb8983f60de00-g1-r1"
+    ]
+  },
+  "claim": {
+    "launch_id": "autopilot-141bb8983f60de00-g1-r1",
+    "workflow": "add-resource",
+    "ts": "2026-11-18T09:02:49Z",
+    "deadline": "2026-11-18T14:02:49Z"
   },
   "verdict": null,
   "history": [
@@ -38,6 +51,12 @@
       "to": "QUEUED",
       "by": "dispatcher",
       "reason": "READY"
+    },
+    {
+      "ts": "2026-11-18T09:02:49Z",
+      "to": "RUNNING",
+      "by": "dispatcher",
+      "reason": "autopilot-141bb8983f60de00-g1-r1"
     }
   ]
 }
