@@ -7,5 +7,5 @@ paused_repos: [ack-prow-staging/eks-controller]
 # this version accepts.
 launcher: prow
 # Services whose items may be launched (Phase 1: the monitored five).
-services: [eks]
+services: [eks, ec2]
 abort_inflight: false
