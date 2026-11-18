@@ -15,7 +15,7 @@
     "sdk_from": "v1.41.1",
     "sdk_to": "service/ec2/v1.345.0"
   },
-  "state": "DETECTED",
+  "state": "QUEUED",
   "links": {
     "view_issue": "https://github.com/sapphirew/autopilot-sandbox/issues/4"
   },
@@ -26,6 +26,18 @@
       "to": "DETECTED",
       "by": "issue-finder",
       "reason": "issue #4"
+    },
+    {
+      "ts": "2026-11-18T08:54:45Z",
+      "to": "TRIAGED",
+      "by": "dispatcher",
+      "reason": "NO_TRIAGE_NEEDED"
+    },
+    {
+      "ts": "2026-11-18T08:54:45Z",
+      "to": "QUEUED",
+      "by": "dispatcher",
+      "reason": "READY"
     }
   ]
 }

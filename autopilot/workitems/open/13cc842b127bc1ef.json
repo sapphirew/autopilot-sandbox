@@ -6,12 +6,17 @@
   "source": "api-change",
   "service": "sandbox",
   "repo": "sapphirew/autopilot-sandbox",
+  "resource": "Widget",
+  "field_path": "Plan9E2E",
   "gap_class": "needs-config",
   "change_class": "config-only",
   "autonomy_level": "human-merge",
   "priority_band": 4,
   "evidence": {},
-  "state": "BLOCKED",
+  "depends_on": [
+    "sdk-bump|sandbox|*|service/sandbox/v0.0.1"
+  ],
+  "state": "DETECTED",
   "links": {},
   "verdict": null,
   "history": [
@@ -25,11 +30,12 @@
       "to": "BLOCKED",
       "by": "e2e-seed",
       "reason": "DEPENDS_ON sha256:86ee6e130ddd3cad HUMAN_REVIEW"
+    },
+    {
+      "ts": "2026-11-18T08:54:45Z",
+      "to": "DETECTED",
+      "by": "dispatcher",
+      "reason": "TRIAGE_REQUIRED"
     }
-  ],
-  "resource": "Widget",
-  "field_path": "Plan9E2E",
-  "depends_on": [
-    "sdk-bump|sandbox|*|service/sandbox/v0.0.1"
   ]
 }

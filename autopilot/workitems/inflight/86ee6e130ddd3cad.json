@@ -13,6 +13,10 @@
   "evidence": {
     "sdk_to": "service/sandbox/v0.0.1"
   },
+  "attempts": {
+    "runs": 1,
+    "max_runs": 3
+  },
   "state": "HUMAN_REVIEW",
   "links": {
     "pr": "https://github.com/sapphirew/autopilot-sandbox/pull/6",
@@ -21,23 +25,6 @@
     ]
   },
   "verdict": null,
-  "history": [
-    {
-      "ts": "2026-11-18T08:00:00Z",
-      "to": "QUEUED",
-      "by": "e2e-seed"
-    },
-    {
-      "ts": "2026-11-18T09:00:00Z",
-      "to": "HUMAN_REVIEW",
-      "by": "e2e-seed",
-      "reason": "PLAN9_E2E_SEED"
-    }
-  ],
-  "attempts": {
-    "runs": 1,
-    "max_runs": 3
-  },
   "gate": {
     "source": "sdk-bump",
     "launch_id": "autopilot-86ee6e130ddd3cad-g1-r1",
@@ -51,6 +38,7 @@
   "review": {
     "number": 6,
     "author": "sapphirew",
+    "ready_at": "2026-11-18T08:54:45Z",
     "review_rounds": 0,
     "human_commits": 0,
     "feedback_rounds": 0,
@@ -58,5 +46,18 @@
     "pinned_human_merge": false,
     "last_activity": "2026-11-18T09:00:00Z",
     "stale_requeues": 0
-  }
+  },
+  "history": [
+    {
+      "ts": "2026-11-18T08:00:00Z",
+      "to": "QUEUED",
+      "by": "e2e-seed"
+    },
+    {
+      "ts": "2026-11-18T09:00:00Z",
+      "to": "HUMAN_REVIEW",
+      "by": "e2e-seed",
+      "reason": "PLAN9_E2E_SEED"
+    }
+  ]
 }
