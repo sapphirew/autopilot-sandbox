@@ -19,18 +19,12 @@
     "runs": 1,
     "max_runs": 3
   },
-  "state": "RUNNING",
+  "state": "QUEUED",
   "links": {
     "view_issue": "https://github.com/sapphirew/autopilot-sandbox/issues/4",
     "prowjobs": [
       "autopilot-141bb8983f60de00-g1-r1"
     ]
-  },
-  "claim": {
-    "launch_id": "autopilot-141bb8983f60de00-g1-r1",
-    "workflow": "add-resource",
-    "ts": "2026-11-18T09:02:49Z",
-    "deadline": "2026-11-18T14:02:49Z"
   },
   "verdict": null,
   "history": [
@@ -57,6 +51,12 @@
       "to": "RUNNING",
       "by": "dispatcher",
       "reason": "autopilot-141bb8983f60de00-g1-r1"
+    },
+    {
+      "ts": "2026-11-18T09:09:50Z",
+      "to": "QUEUED",
+      "by": "dispatcher",
+      "reason": "RETRY JOB_INCOMPLETE"
     }
   ]
 }
