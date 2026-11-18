@@ -2,7 +2,7 @@
 # paused: true stops every launch. Ingest and reconcile still run.
 paused: false
 # Repos (owner/name) whose items are never launched.
-paused_repos: []
+paused_repos: [ack-prow-staging/eks-controller]
 # shadow: log what would be launched and start nothing. The only launcher
 # this version accepts.
 launcher: prow
