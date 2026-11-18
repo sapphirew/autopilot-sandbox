@@ -16,7 +16,7 @@
   "depends_on": [
     "sdk-bump|sandbox|*|service/sandbox/v0.0.1"
   ],
-  "state": "BLOCKED",
+  "state": "QUEUED",
   "links": {},
   "verdict": null,
   "history": [
@@ -42,6 +42,12 @@
       "to": "BLOCKED",
       "by": "e2e-seed",
       "reason": "DEPENDS_ON sha256:86ee6e130ddd3cad HUMAN_REVIEW"
+    },
+    {
+      "ts": "2026-11-18T08:55:53Z",
+      "to": "QUEUED",
+      "by": "dispatcher",
+      "reason": "DEPENDENCIES_MET"
     }
   ]
 }

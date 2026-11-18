@@ -17,7 +17,7 @@
     "runs": 1,
     "max_runs": 3
   },
-  "state": "GATING",
+  "state": "ESCALATED",
   "links": {
     "pr": "https://github.com/ack-prow-staging/eks-controller/pull/1",
     "prowjobs": [
@@ -25,21 +25,36 @@
       "autopilot-c8991b87dc090165-g1-d2"
     ]
   },
-  "claim": {
-    "launch_id": "autopilot-c8991b87dc090165-g1-d2",
-    "workflow": "dod",
-    "ts": "2026-11-18T09:30:00Z",
-    "deadline": "2026-11-18T11:30:00Z"
+  "verdict": {
+    "outcome": "needs_human",
+    "reason": "GATE_RECLASSIFY_HAND_WRITTEN_CODE"
   },
-  "verdict": null,
   "gate": {
     "source": "dod",
     "launch_id": "autopilot-c8991b87dc090165-g1-d2",
     "head_sha": "7da9e9b042e8b3f163d751f3f7bfd9fe2f5aebff",
     "base_sha": "58b3d8d5f1995710bea00659155009d3b2cb6f9e",
+    "verdict": "fail",
+    "digest": "sha256:05d8378e3d9a26719fae80c8019b8fcdedbc6514581855677e8f6298ac22027a",
+    "reasons": [
+      "build:BUILD_FAILED",
+      "crd-diff:CRD_COMPAT_INVALID",
+      "provenance:NO_BOT_COMMIT",
+      "regen-clean:REGEN_CODEGEN_VERSION_MISMATCH",
+      "regen-clean:REGEN_DIFF",
+      "sensitive-field:CRD_COMPAT_INVALID"
+    ],
+    "reclassify_to": "hand-written-code",
+    "not_covered": [
+      "aws-resource-leak-check",
+      "behavior-probe",
+      "emulator-e2e",
+      "new-e2e-test",
+      "real-aws-e2e"
+    ],
     "env_retries": 0,
     "gates": 1,
-    "ts": "2026-11-18T09:00:00Z"
+    "ts": "2026-11-18T08:55:53Z"
   },
   "review": {
     "number": 1,
@@ -68,6 +83,12 @@
       "to": "GATING",
       "by": "e2e-seed",
       "reason": "PLAN9_E2E_SEED autopilot-c8991b87dc090165-g1-d2 (d1 failed: no origin remote, fixed in 391a9cf)"
+    },
+    {
+      "ts": "2026-11-18T08:55:53Z",
+      "to": "ESCALATED",
+      "by": "dispatcher",
+      "reason": "GATE_RECLASSIFY_HAND_WRITTEN_CODE"
     }
   ]
 }

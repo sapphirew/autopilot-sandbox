@@ -17,7 +17,7 @@
     "runs": 1,
     "max_runs": 3
   },
-  "state": "HUMAN_REVIEW",
+  "state": "DONE",
   "links": {
     "pr": "https://github.com/sapphirew/autopilot-sandbox/pull/6",
     "prowjobs": [
@@ -45,7 +45,9 @@
     "would_merge": "yes",
     "pinned_human_merge": false,
     "last_activity": "2026-11-18T09:00:00Z",
-    "stale_requeues": 0
+    "stale_requeues": 0,
+    "merged_at": "2026-11-18T08:55:48Z",
+    "merge_sha": "cdb6571c09447b1ba6667cd1516f8e1a318de141"
   },
   "history": [
     {
@@ -58,6 +60,18 @@
       "to": "HUMAN_REVIEW",
       "by": "e2e-seed",
       "reason": "PLAN9_E2E_SEED"
+    },
+    {
+      "ts": "2026-11-18T08:55:53Z",
+      "to": "MERGED",
+      "by": "dispatcher",
+      "reason": "PR_MERGED"
+    },
+    {
+      "ts": "2026-11-18T08:55:53Z",
+      "to": "DONE",
+      "by": "dispatcher",
+      "reason": "NO_RELEASE_TRACKING"
     }
   ]
 }
