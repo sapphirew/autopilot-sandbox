@@ -8,7 +8,7 @@
   "repo": "sapphirew/autopilot-sandbox",
   "resource": "Widget",
   "field_path": "Plan9E2E",
-  "gap_class": "needs-config",
+  "gap_class": "regen",
   "change_class": "config-only",
   "autonomy_level": "human-merge",
   "priority_band": 4,
@@ -16,7 +16,7 @@
   "depends_on": [
     "sdk-bump|sandbox|*|service/sandbox/v0.0.1"
   ],
-  "state": "DETECTED",
+  "state": "BLOCKED",
   "links": {},
   "verdict": null,
   "history": [
@@ -36,6 +36,12 @@
       "to": "DETECTED",
       "by": "dispatcher",
       "reason": "TRIAGE_REQUIRED"
+    },
+    {
+      "ts": "2026-11-18T08:58:00Z",
+      "to": "BLOCKED",
+      "by": "e2e-seed",
+      "reason": "DEPENDS_ON sha256:86ee6e130ddd3cad HUMAN_REVIEW"
     }
   ]
 }
